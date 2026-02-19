@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcards from My Jungle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Postcards from My Jungle </h1>
+            <p class="subtitle">A lo-fi journey through a GenAI-imagined wilderness</p>
+        </header>
+
+        <div class="jungle-container">
+            <div class="animal-card">
+                <div class="image-container">
+                    <img id="animalImage" class="animal-image" src="" alt="Fictional animal">
+                </div>
+
+                <div class="info-container">
+                    <div class="animal-name" id="animalName">Loading...</div>
+                    
+                    <div class="animal-language" id="animalLanguage">
+                        🔤 Animal Language
+                    </div>
+
+                    <div class="sound-label">🔊 Creature Sound:</div>
+                    <audio id="animalSound" controls>
+                        <source src="" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                    <div class="controls">
+                        <button id="prevBtn" class="play-btn">← Previous</button>
+                        <button id="nextBtn" class="play-btn">Next →</button>
+                    </div>
+
+                    <div class="counter">
+                        <span id="currentIndex">1</span> / <span id="totalCount">50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dots" id="dots"></div>
+        </div>
+
+        <footer>
+            <p>Trained with diffusion models • Sounds generated with Stable Audio • Language created with LLMs</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
